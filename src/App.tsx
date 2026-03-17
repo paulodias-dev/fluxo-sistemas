@@ -13,12 +13,12 @@ import CookieConsent from './components/CookieConsent';
 import LegalModal from './components/LegalModal';
 
 export default function App() {
-  const [legalModal, setLegalModal] = useState<{ isOpen: boolean; type: 'privacy' | 'terms' | null }>({
+  const [legalModal, setLegalModal] = useState<{ isOpen: boolean; type: 'privacy' | 'terms' | 'cookies' | null }>({
     isOpen: false,
     type: null,
   });
 
-  const openLegal = (type: 'privacy' | 'terms') => {
+  const openLegal = (type: 'privacy' | 'terms' | 'cookies') => {
     setLegalModal({ isOpen: true, type });
   };
 
@@ -40,7 +40,7 @@ export default function App() {
       </main>
       <Footer onOpenLegal={openLegal} />
       <ScrollToTop />
-      <CookieConsent />
+      <CookieConsent onOpenLegal={openLegal} />
       
       <LegalModal 
         isOpen={legalModal.isOpen} 

@@ -4,7 +4,7 @@ import { X } from 'lucide-react';
 interface LegalModalProps {
   isOpen: boolean;
   onClose: () => void;
-  type: 'privacy' | 'terms' | null;
+  type: 'privacy' | 'terms' | 'cookies' | null;
 }
 
 export default function LegalModal({ isOpen, onClose, type }: LegalModalProps) {
@@ -56,6 +56,27 @@ export default function LegalModal({ isOpen, onClose, type }: LegalModalProps) {
         {
           heading: '5. Alterações',
           text: 'Podemos revisar estes termos a qualquer momento, sem aviso prévio. Ao usar este site, você concorda em ficar vinculado à versão atual desses termos de uso.',
+        },
+      ],
+    },
+    cookies: {
+      title: 'Política de Cookies',
+      sections: [
+        {
+          heading: '1. O que são Cookies?',
+          text: 'Cookies são pequenos arquivos de texto enviados pelo site ao seu navegador para registrar seu comportamento e preferências de navegação. Eles ajudam a tornar o site mais eficiente.',
+        },
+        {
+          heading: '2. Como utilizamos?',
+          text: 'Utilizamos cookies essenciais para o funcionamento do site e cookies analíticos para entender o tráfego e melhorar nossos serviços.',
+        },
+        {
+          heading: '3. Gerenciamento de Cookies',
+          text: 'Você pode optar por aceitar ou recusar cookies. A maioria dos navegadores permite que você gerencie suas preferências nas configurações de segurança.',
+        },
+        {
+          heading: '4. Impacto da Recusa',
+          text: 'A recusa de certos cookies pode afetar algumas funcionalidades do site, mas não impedirá o acesso às informações básicas de nossos serviços.',
         },
       ],
     },

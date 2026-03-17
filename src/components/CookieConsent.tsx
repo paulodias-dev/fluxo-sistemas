@@ -2,7 +2,11 @@ import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { X, Cookie } from 'lucide-react';
 
-export default function CookieConsent() {
+interface CookieConsentProps {
+  onOpenLegal: (type: 'privacy' | 'terms' | 'cookies') => void;
+}
+
+export default function CookieConsent({ onOpenLegal }: CookieConsentProps) {
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
@@ -35,7 +39,13 @@ export default function CookieConsent() {
               <div className="flex-1">
                 <h4 className="font-bold dark:text-white text-slate-900 mb-1">Privacidade e Cookies</h4>
                 <p className="text-sm text-slate-600 dark:text-slate-400">
-                  Utilizamos cookies para melhorar sua experiência em nosso site. Ao continuar navegando, você concorda com nossa política de privacidade.
+                  Utilizamos cookies para melhorar sua experiência em nosso site. Ao continuar navegando, você concorda com nossa{' '}
+                  <button 
+                    onClick={() => onOpenLegal('cookies')}
+                    className="text-brand-blue hover:underline font-medium outline-hidden"
+                  >
+                    política de cookies
+                  </button>.
                 </p>
               </div>
               <button 

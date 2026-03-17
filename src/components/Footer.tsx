@@ -1,8 +1,8 @@
-import { Instagram, Linkedin, Github, Twitter } from 'lucide-react';
+import { Instagram, Linkedin, Github, Twitter, AtSign as Threads } from 'lucide-react';
 import Logo from './Logo';
 
 interface FooterProps {
-  onOpenLegal: (type: 'privacy' | 'terms') => void;
+  onOpenLegal: (type: 'privacy' | 'terms' | 'cookies') => void;
 }
 
 export default function Footer({ onOpenLegal }: FooterProps) {
@@ -21,14 +21,17 @@ export default function Footer({ onOpenLegal }: FooterProps) {
               <a href={import.meta.env.VITE_SOCIAL_INSTAGRAM} target="_blank" rel="noopener noreferrer" className="w-10 h-10 glass rounded-full flex items-center justify-center text-slate-500 dark:text-slate-400 hover:text-brand-blue transition-colors">
                 <Instagram size={20} />
               </a>
-              <a href={import.meta.env.VITE_SOCIAL_LINKEDIN} target="_blank" rel="noopener noreferrer" className="w-10 h-10 glass rounded-full flex items-center justify-center text-slate-500 dark:text-slate-400 hover:text-brand-blue transition-colors">
+              {/* <a href={import.meta.env.VITE_SOCIAL_LINKEDIN} target="_blank" rel="noopener noreferrer" className="w-10 h-10 glass rounded-full flex items-center justify-center text-slate-500 dark:text-slate-400 hover:text-brand-blue transition-colors">
                 <Linkedin size={20} />
-              </a>
+              </a> */}
               <a href={import.meta.env.VITE_SOCIAL_GITHUB} target="_blank" rel="noopener noreferrer" className="w-10 h-10 glass rounded-full flex items-center justify-center text-slate-500 dark:text-slate-400 hover:text-brand-blue transition-colors">
                 <Github size={20} />
               </a>
-              <a href={import.meta.env.VITE_SOCIAL_TWITTER} target="_blank" rel="noopener noreferrer" className="w-10 h-10 glass rounded-full flex items-center justify-center text-slate-500 dark:text-slate-400 hover:text-brand-blue transition-colors">
+              {/* <a href={import.meta.env.VITE_SOCIAL_TWITTER} target="_blank" rel="noopener noreferrer" className="w-10 h-10 glass rounded-full flex items-center justify-center text-slate-500 dark:text-slate-400 hover:text-brand-blue transition-colors">
                 <Twitter size={20} />
+              </a> */}
+              <a href={import.meta.env.VITE_SOCIAL_THREADS} target="_blank" rel="noopener noreferrer" className="w-10 h-10 glass rounded-full flex items-center justify-center text-slate-500 dark:text-slate-400 hover:text-brand-blue transition-colors">
+                <Threads size={20} />
               </a>
             </div>
           </div>
@@ -47,7 +50,7 @@ export default function Footer({ onOpenLegal }: FooterProps) {
             <h4 className="font-bold dark:text-white text-slate-900 mb-6 uppercase tracking-widest text-sm">Legal</h4>
             <ul className="space-y-4">
               <li>
-                <button 
+                <button
                   onClick={() => onOpenLegal('privacy')}
                   className="text-slate-500 dark:text-slate-400 hover:text-brand-blue transition-colors outline-hidden"
                 >
@@ -55,14 +58,21 @@ export default function Footer({ onOpenLegal }: FooterProps) {
                 </button>
               </li>
               <li>
-                <button 
+                <button
                   onClick={() => onOpenLegal('terms')}
                   className="text-slate-500 dark:text-slate-400 hover:text-brand-blue transition-colors outline-hidden"
                 >
                   Termos de Uso
                 </button>
               </li>
-              <li><a href="#" className="text-slate-500 dark:text-slate-400 hover:text-brand-blue transition-colors">Cookies</a></li>
+              <li>
+                <button 
+                  onClick={() => onOpenLegal('cookies')}
+                  className="text-slate-500 dark:text-slate-400 hover:text-brand-blue transition-colors outline-hidden"
+                >
+                  Cookies
+                </button>
+              </li>
             </ul>
           </div>
         </div>
@@ -76,6 +86,6 @@ export default function Footer({ onOpenLegal }: FooterProps) {
           </p>
         </div>
       </div>
-    </footer>
+    </footer >
   );
 }

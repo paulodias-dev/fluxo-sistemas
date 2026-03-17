@@ -4,6 +4,15 @@ import { ExternalLink, X, Github } from 'lucide-react';
 
 const projects = [
   {
+    id: 0,
+    title: 'Sistema de ASO Online',
+    category: 'Sistemas Web',
+    image: 'https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?q=80&w=2070&auto=format&fit=crop', // Ilustrativa profissional
+    description: 'Plataforma completa para gestão de Atestados de Saúde Ocupacional (ASO). Desenvolvida para automação de clínicas e empresas, permitindo o controle centralizado de fichas, exames, pacientes e agendamentos com alta performance.',
+    techs: ['Laravel v12', 'MySQL', 'jQuery', 'JavaScript'],
+    featured: true,
+  },
+  {
     id: 1,
     title: 'E-commerce Pro',
     category: 'Sistemas Web',
@@ -41,21 +50,12 @@ const projects = [
   },
   {
     id: 5,
-    title: 'Sistema Imobiliário',
-    category: 'Websites',
-    image: 'https://picsum.photos/id/5/800/600',
-    description: 'Plataforma para imobiliárias com busca avançada, filtros dinâmicos e agendamento de visitas.',
-    techs: ['Laravel', 'jQuery', 'MySQL'],
-    featured: false,
-  },
-  {
-    id: 6,
-    title: 'Plataforma EAD',
+    title: 'Portal Master Imobiliária',
     category: 'Sistemas Web',
-    image: 'https://picsum.photos/id/6/800/600',
-    description: 'Ambiente virtual de aprendizagem com videoaulas, fóruns e emissão de certificados.',
-    techs: ['React', 'Laravel', 'AWS S3'],
-    featured: false,
+    image: '/master-imobiliaria.png',
+    description: 'Plataforma robusta para gestão e anúncio de imóveis em Brasília-DF. Inclui integração com AWS S3 para armazenamento de imagens, busca avançada com filtros dinâmicos e painel administrativo para controle total de leads e anúncios.',
+    techs: ['Laravel v12', 'MySQL', 'jQuery', 'AWS S3', 'JavaScript'],
+    featured: true,
   },
 ];
 
