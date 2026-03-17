@@ -81,8 +81,8 @@ export default function About() {
             <div className="glass p-3 rounded-[2.5rem] border-white/20 shadow-2xl">
               <img
                 src="https://picsum.photos/id/160/800/1000"
-                alt="Nossa Equipe"
-                className="rounded-[2rem] w-full h-auto"
+                alt="Equipe da Fluxo Sistemas trabalhando em engenharia de software e arquitetura de sistemas"
+                className="rounded-2xl w-full h-auto"
                 referrerPolicy="no-referrer"
               />
             </div>

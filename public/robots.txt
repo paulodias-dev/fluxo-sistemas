@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://fluxosistemas.com.br/sitemap.xml

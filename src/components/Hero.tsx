@@ -62,7 +62,7 @@ export default function Hero() {
           <div className="relative z-10 glass p-4 rounded-3xl shadow-2xl border-white/20 overflow-hidden">
             <img
               src="https://picsum.photos/id/180/800/600"
-              alt="Desenvolvimento de Sistemas"
+              alt="Plataforma de visualização de código e desenvolvimento de sistemas web de alta performance"
               className="rounded-2xl w-full h-auto object-cover"
               referrerPolicy="no-referrer"
             />
