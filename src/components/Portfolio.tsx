@@ -52,7 +52,7 @@ const projects = [
     id: 5,
     title: 'Portal Master Imobiliária',
     category: 'Sistemas Web',
-    image: '/master-imobiliaria.png',
+    image: '/images/master-imobiliaria.png',
     description: 'Plataforma robusta para gestão e anúncio de imóveis em Brasília-DF. Inclui integração com AWS S3 para armazenamento de imagens, busca avançada com filtros dinâmicos e painel administrativo para controle total de leads e anúncios.',
     techs: ['Laravel v12', 'MySQL', 'jQuery', 'AWS S3', 'JavaScript'],
     featured: true,
