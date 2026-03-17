@@ -26,10 +26,8 @@ export default function Hero() {
             <span>Sistemas Web de Alta Performance</span>
           </motion.div>
           
-          <h1 className="text-5xl md:text-7xl font-extrabold leading-tight mb-6 dark:text-white text-slate-900">
-            Transformamos ideias em <br />
-            <span className="text-gradient">sistemas web</span> de <br />
-            alto desempenho.
+          <h1 className="text-4xl md:text-7xl font-extrabold leading-tight mb-6 dark:text-white text-slate-900">
+            Transformamos ideias em <span className="text-gradient">sistemas web</span> de alto desempenho.
           </h1>
           
           <p className="text-lg md:text-xl text-slate-700 dark:text-slate-400 mb-10 max-w-xl">
@@ -39,14 +37,14 @@ export default function Hero() {
           <div className="flex flex-col sm:flex-row gap-4">
             <a
               href="#servicos"
-              className="px-8 py-4 bg-gradient text-white rounded-xl font-bold flex items-center justify-center gap-2 hover:shadow-lg hover:shadow-brand-blue/30 transition-all hover:-translate-y-1"
+              className="w-full sm:w-auto px-8 py-4 bg-gradient text-white rounded-xl font-bold flex items-center justify-center gap-2 hover:shadow-lg hover:shadow-brand-blue/30 transition-all hover:-translate-y-1"
             >
               Ver Serviços
               <ArrowRight size={20} />
             </a>
             <a
               href="#contato"
-              className="px-8 py-4 glass dark:text-white text-slate-900 rounded-xl font-bold flex items-center justify-center gap-2 hover:bg-white/20 transition-all border border-white/30"
+              className="w-full sm:w-auto px-8 py-4 glass dark:text-white text-slate-900 rounded-xl font-bold flex items-center justify-center gap-2 hover:bg-white/20 transition-all border border-white/30"
             >
               Fale Conosco
             </a>
