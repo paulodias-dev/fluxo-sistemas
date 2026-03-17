@@ -30,7 +30,7 @@
 }
 
 .glass {
-  @apply backdrop-blur-xl bg-white/10 border border-white/20 dark:bg-black/10 dark:border-white/10;
+  @apply backdrop-blur-xl bg-white/40 border border-slate-200 dark:bg-black/10 dark:border-white/10;
 }
 
 .text-gradient {
@@ -47,9 +47,9 @@
 }
 
 ::-webkit-scrollbar-track {
-  @apply bg-slate-100 dark:bg-slate-900;
+  @apply bg-slate-200 dark:bg-slate-900;
 }
 
 ::-webkit-scrollbar-thumb {
-  @apply bg-brand-blue/50 rounded-full hover:bg-brand-blue;
+  @apply bg-brand-blue/40 rounded-full hover:bg-brand-blue/60 transition-colors;
 }

@@ -45,7 +45,7 @@ export default function Contact() {
               Vamos iniciar seu <br />
               <span className="text-gradient">Próximo Projeto?</span>
             </h2>
-            <p className="text-xl text-slate-600 dark:text-slate-400 max-w-2xl mx-auto">
+            <p className="text-xl text-slate-700 dark:text-slate-400 max-w-2xl mx-auto">
               Estamos prontos para transformar suas ideias em sistemas robustos. 
               Escolha o canal de sua preferência e fale diretamente conosco.
             </p>
@@ -69,7 +69,7 @@ export default function Contact() {
               } ${!method.link ? 'cursor-default' : 'cursor-pointer'}`}
             >
               <div className={`w-16 h-16 rounded-2xl flex items-center justify-center mb-6 transition-transform group-hover:scale-110 ${
-                method.primary ? 'bg-gradient text-white shadow-lg shadow-brand-blue/20' : 'bg-slate-200 dark:bg-slate-800 text-brand-blue'
+                method.primary ? 'bg-gradient text-white shadow-lg shadow-brand-blue/20' : 'bg-slate-300 dark:bg-slate-800 text-brand-blue'
               }`}>
                 <method.icon size={28} />
               </div>
@@ -83,7 +83,7 @@ export default function Contact() {
                 {method.value}
               </p>
               
-              <p className="text-sm text-slate-500 dark:text-slate-400 leading-relaxed">
+              <p className="text-sm text-slate-600 dark:text-slate-400 leading-relaxed">
                 {method.description}
               </p>
 
@@ -105,7 +105,7 @@ export default function Contact() {
           transition={{ delay: 0.5 }}
           className="mt-20 text-center"
         >
-          <p className="text-slate-500 dark:text-slate-500 text-sm font-medium uppercase tracking-widest">
+          <p className="text-slate-600 dark:text-slate-500 text-sm font-medium uppercase tracking-widest">
             Atendimento Seg. a Sex. • 08h às 18h
           </p>
         </motion.div>

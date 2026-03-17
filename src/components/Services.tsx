@@ -40,7 +40,7 @@ export default function Services() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.1 }}
-            className="text-lg text-slate-600 dark:text-slate-400"
+            className="text-lg text-slate-700 dark:text-slate-400"
           >
             Oferecemos soluções completas para transformar sua presença digital com tecnologia de ponta e foco em resultados.
           </motion.p>
@@ -63,7 +63,7 @@ export default function Services() {
               <h3 className="text-2xl font-bold mb-4 dark:text-white text-slate-900">
                 {service.title}
               </h3>
-              <p className="text-slate-600 dark:text-slate-400 leading-relaxed">
+              <p className="text-slate-700 dark:text-slate-400 leading-relaxed">
                 {service.description}
               </p>
             </motion.div>

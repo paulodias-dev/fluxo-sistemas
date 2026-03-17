@@ -43,10 +43,10 @@ export default function About() {
             <h3 className="text-4xl md:text-5xl font-bold mb-8 dark:text-white text-slate-900 leading-tight">
               Especialistas em <span className="text-gradient">Engenharia de Software</span> e Performance.
             </h3>
-            <p className="text-lg text-slate-600 dark:text-slate-400 mb-8 leading-relaxed">
+            <p className="text-lg text-slate-700 dark:text-slate-400 mb-8 leading-relaxed">
               Nascemos com a missão de elevar o padrão do desenvolvimento web no Brasil. Não entregamos apenas código, entregamos soluções estratégicas que resolvem problemas reais e escalam com o seu crescimento.
             </p>
-            <p className="text-lg text-slate-600 dark:text-slate-400 mb-10 leading-relaxed">
+            <p className="text-lg text-slate-700 dark:text-slate-400 mb-10 leading-relaxed">
               Nossa equipe é formada por desenvolvedores seniores apaixonados por arquitetura limpa e experiência do usuário, focados em utilizar o que há de mais moderno no ecossistema PHP e JavaScript.
             </p>
             
@@ -65,7 +65,7 @@ export default function About() {
                   </div>
                   <div>
                     <h4 className="font-bold dark:text-white text-slate-900 mb-1">{item.title}</h4>
-                    <p className="text-sm text-slate-500 dark:text-slate-400">{item.description}</p>
+                    <p className="text-sm text-slate-600 dark:text-slate-400">{item.description}</p>
                   </div>
                 </motion.div>
               ))}
@@ -91,11 +91,11 @@ export default function About() {
               <div className="flex gap-12">
                 <div>
                   <div className="text-4xl font-extrabold text-gradient mb-1">10+</div>
-                  <div className="text-xs font-bold uppercase tracking-widest text-slate-500 dark:text-slate-400">Anos de Exp.</div>
+                  <div className="text-xs font-bold uppercase tracking-widest text-slate-600 dark:text-slate-400">Anos de Exp.</div>
                 </div>
                 <div>
                   <div className="text-4xl font-extrabold text-gradient mb-1">150+</div>
-                  <div className="text-xs font-bold uppercase tracking-widest text-slate-500 dark:text-slate-400">Projetos</div>
+                  <div className="text-xs font-bold uppercase tracking-widest text-slate-600 dark:text-slate-400">Projetos</div>
                 </div>
               </div>
             </div>

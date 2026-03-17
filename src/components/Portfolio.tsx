@@ -80,7 +80,7 @@ export default function Portfolio() {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 0.1 }}
-              className="text-lg text-slate-600 dark:text-slate-400"
+              className="text-lg text-slate-700 dark:text-slate-400"
             >
               Conheça alguns dos projetos que desenvolvemos para empresas que buscam inovação e performance.
             </motion.p>
@@ -123,7 +123,7 @@ export default function Portfolio() {
                 </h3>
                 <div className="flex flex-wrap gap-2 mt-4">
                   {project.techs.slice(0, 3).map((tech) => (
-                    <span key={tech} className="text-[10px] px-2 py-1 glass rounded-md text-slate-500 dark:text-slate-400">
+                    <span key={tech} className="text-[10px] px-2 py-1 glass rounded-md text-slate-600 dark:text-slate-400">
                       {tech}
                     </span>
                   ))}
@@ -174,7 +174,7 @@ export default function Portfolio() {
                   <h3 className="text-3xl font-bold mb-6 dark:text-white text-slate-900">
                     {selectedProject.title}
                   </h3>
-                  <p className="text-slate-600 dark:text-slate-400 mb-8 leading-relaxed">
+                  <p className="text-slate-700 dark:text-slate-400 mb-8 leading-relaxed">
                     {selectedProject.description}
                   </p>
                   
@@ -183,11 +183,10 @@ export default function Portfolio() {
                       Tecnologias Utilizadas
                     </h4>
                     <div className="flex flex-wrap gap-2">
-                      {selectedProject.techs.map((tech) => (
-                        <span key={tech} className="px-3 py-1 glass rounded-lg text-xs font-medium dark:text-slate-300 text-slate-600">
+                      {selectedProject.techs.map((tech) =>                          <span key={tech} className="px-3 py-1 glass rounded-lg text-xs font-medium dark:text-slate-300 text-slate-700">
                           {tech}
                         </span>
-                      ))}
+                      )}
                     </div>
                   </div>
                   

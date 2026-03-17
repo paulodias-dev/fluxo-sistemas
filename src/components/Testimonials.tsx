@@ -69,7 +69,7 @@ export default function Testimonials() {
                 <Quote size={80} />
               </div>
               
-              <p className="text-xl md:text-2xl text-slate-600 dark:text-slate-300 mb-10 italic leading-relaxed relative z-10">
+              <p className="text-xl md:text-2xl text-slate-700 dark:text-slate-300 mb-10 italic leading-relaxed relative z-10">
                 "{testimonials[current].content}"
               </p>
               
@@ -94,7 +94,7 @@ export default function Testimonials() {
           <div className="flex justify-center gap-4 mt-10">
             <button
               onClick={prev}
-              className="p-3 glass rounded-full hover:bg-white/20 transition-all text-slate-600 dark:text-white"
+              className="p-3 glass rounded-full hover:bg-white/20 transition-all text-slate-700 dark:text-white"
             >
               <ChevronLeft size={24} />
             </button>
@@ -111,7 +111,7 @@ export default function Testimonials() {
             </div>
             <button
               onClick={next}
-              className="p-3 glass rounded-full hover:bg-white/20 transition-all text-slate-600 dark:text-white"
+              className="p-3 glass rounded-full hover:bg-white/20 transition-all text-slate-700 dark:text-white"
             >
               <ChevronRight size={24} />
             </button>

@@ -32,7 +32,7 @@ export default function Hero() {
             alto desempenho.
           </h1>
           
-          <p className="text-lg md:text-xl text-slate-600 dark:text-slate-400 mb-10 max-w-xl">
+          <p className="text-lg md:text-xl text-slate-700 dark:text-slate-400 mb-10 max-w-xl">
             Desenvolvemos soluções robustas com PHP, Laravel e React para impulsionar o seu negócio no ambiente digital com segurança e escalabilidade.
           </p>
           

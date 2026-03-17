@@ -14,11 +14,11 @@ export default function Footer({ onOpenLegal }: FooterProps) {
             <a href="#inicio" className="inline-block mb-6">
               <Logo />
             </a>
-            <p className="text-slate-500 dark:text-slate-400 max-w-sm mb-8">
+            <p className="text-slate-600 dark:text-slate-400 max-w-sm mb-8">
               Transformamos ideias em sistemas web de alto desempenho. Especialistas em Laravel, React e soluções personalizadas para o seu negócio.
             </p>
             <div className="flex gap-4">
-              <a href={import.meta.env.VITE_SOCIAL_INSTAGRAM} target="_blank" rel="noopener noreferrer" className="w-10 h-10 glass rounded-full flex items-center justify-center text-slate-500 dark:text-slate-400 hover:text-brand-blue transition-colors">
+              <a href={import.meta.env.VITE_SOCIAL_INSTAGRAM} target="_blank" rel="noopener noreferrer" className="w-10 h-10 glass rounded-full flex items-center justify-center text-slate-600 dark:text-slate-400 hover:text-brand-blue transition-colors">
                 <Instagram size={20} />
               </a>
               {/* <a href={import.meta.env.VITE_SOCIAL_LINKEDIN} target="_blank" rel="noopener noreferrer" className="w-10 h-10 glass rounded-full flex items-center justify-center text-slate-500 dark:text-slate-400 hover:text-brand-blue transition-colors">
@@ -52,7 +52,7 @@ export default function Footer({ onOpenLegal }: FooterProps) {
               <li>
                 <button
                   onClick={() => onOpenLegal('privacy')}
-                  className="text-slate-500 dark:text-slate-400 hover:text-brand-blue transition-colors outline-hidden"
+                  className="text-slate-600 dark:text-slate-400 hover:text-brand-blue transition-colors outline-hidden"
                 >
                   Privacidade
                 </button>
@@ -60,7 +60,7 @@ export default function Footer({ onOpenLegal }: FooterProps) {
               <li>
                 <button
                   onClick={() => onOpenLegal('terms')}
-                  className="text-slate-500 dark:text-slate-400 hover:text-brand-blue transition-colors outline-hidden"
+                  className="text-slate-600 dark:text-slate-400 hover:text-brand-blue transition-colors outline-hidden"
                 >
                   Termos de Uso
                 </button>
@@ -68,7 +68,7 @@ export default function Footer({ onOpenLegal }: FooterProps) {
               <li>
                 <button 
                   onClick={() => onOpenLegal('cookies')}
-                  className="text-slate-500 dark:text-slate-400 hover:text-brand-blue transition-colors outline-hidden"
+                  className="text-slate-600 dark:text-slate-400 hover:text-brand-blue transition-colors outline-hidden"
                 >
                   Cookies
                 </button>
@@ -78,10 +78,10 @@ export default function Footer({ onOpenLegal }: FooterProps) {
         </div>
 
         <div className="pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-4">
-          <p className="text-slate-500 dark:text-slate-400 text-sm">
+          <p className="text-slate-600 dark:text-slate-400 text-sm">
             © {new Date().getFullYear()} {import.meta.env.VITE_SITE_NAME}. Todos os direitos reservados.
           </p>
-          <p className="text-slate-500 dark:text-slate-400 text-sm flex items-center gap-1">
+          <p className="text-slate-600 dark:text-slate-400 text-sm flex items-center gap-1">
             Desenvolvido com <span className="text-red-500">❤</span> por {import.meta.env.VITE_SITE_NAME}
           </p>
         </div>
