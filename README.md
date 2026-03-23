@@ -1,7 +1,3 @@
-<div align="center">
-<img width="1200" height="475" alt="Fluxo Sistemas Banner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
-
 # Fluxo Sistemas - Engenharia de Software e Desenvolvimento Web
 
 Bem-vindo ao repositório oficial da **Fluxo Sistemas**. Este projeto representa a excelência em desenvolvimento de software, focado em criar soluções robustas, escaláveis e de alta performance.
