@@ -37,12 +37,12 @@ export default function About() {
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
           >
-            <h2 className="text-sm font-bold uppercase tracking-widest text-brand-blue mb-4">
+            <span className="text-sm font-bold uppercase tracking-widest text-brand-blue mb-4 block">
               Sobre a Fluxo Sistemas
-            </h2>
-            <h3 className="text-4xl md:text-5xl font-bold mb-8 dark:text-white text-slate-900 leading-tight">
+            </span>
+            <h2 className="text-4xl md:text-5xl font-bold mb-8 dark:text-white text-slate-900 leading-tight">
               Especialistas em <span className="text-gradient">Engenharia de Software</span> e Performance.
-            </h3>
+            </h2>
             <p className="text-lg text-slate-700 dark:text-slate-400 mb-8 leading-relaxed">
               Nascemos com a missão de elevar o padrão do desenvolvimento web no Brasil. Não entregamos apenas código, entregamos soluções estratégicas que resolvem problemas reais e escalam com o seu crescimento.
             </p>
